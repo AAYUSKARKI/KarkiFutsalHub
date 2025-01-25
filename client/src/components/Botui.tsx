@@ -48,7 +48,7 @@ const ChatUI = ({ onClose }: { onClose: () => void }) => {
     setInput("");
 
     try {
-      const response = await axios.post("http://localhost:5000/api/chat", { 
+      const response = await axios.post("https://karkifutsalhub.onrender.com/api/chat", { 
         message: input 
       });
 
