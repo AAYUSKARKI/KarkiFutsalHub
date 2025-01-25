@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Loader2, AlertTriangle, X, ChartBarIcon } from "lucide-react";
+import { Send, Loader2, AlertTriangle, X, MessageCircle } from "lucide-react";
 import axios from "axios";
 
 interface Message {
@@ -79,7 +79,7 @@ const ChatUI = ({ onClose }: { onClose: () => void }) => {
   return (
     <div className="fixed bottom-20 right-8 w-96 bg-white rounded-xl shadow-2xl flex flex-col border border-gray-200">
       <div className="flex justify-between items-center p-4 border-b">
-        <h3 className="font-semibold">Tennis Assistant</h3>
+        <h3 className="font-semibold">Futsal Assistant</h3>
         <button 
           onClick={onClose}
           className="p-1 hover:bg-gray-100 rounded-full"
@@ -164,7 +164,7 @@ export default function ChatAssistant() {
         className="fixed bottom-8 right-8 bg-gradient-to-r from-green-500 to-blue-500 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-110"
         onClick={() => setIsChatOpen(!isChatOpen)}
       >
-        <ChartBarIcon className="w-6 h-6" />
+        <MessageCircle className="w-6 h-6" />
       </button>
 
       <AnimatePresence>
