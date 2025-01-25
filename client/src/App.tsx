@@ -6,6 +6,9 @@ import Footer from './components/Footer';
 import FloatingActionButton from './components/Floatingbutton';
 import AdminDashboard from './components/ViewBooking';
 import ChatAssistant from './components/Botui';
+import MembershipRewards from './components/MembershipRewards';
+import Pricing from './components/Pricing';
+import Testimonials from './components/Testinomials';
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Pricing />
+      <MembershipRewards />
+      <Testimonials/>
       <BookingSystem />
       <AdminDashboard/>
       <ChatAssistant/>
