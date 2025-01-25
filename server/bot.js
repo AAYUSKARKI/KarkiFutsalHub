@@ -7,7 +7,7 @@ const app = express();
 const port = 5000;
 
 // Middleware
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://karki-futsal-hub.vercel.app" }));
 app.use(bodyParser.json());
 
 const apiKey = "AIzaSyD05ntILTF4dYP9kFIONYoMccaC95xFKa0"; // Replace with your actual API key
